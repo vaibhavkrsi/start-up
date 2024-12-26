@@ -1,13 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export", // Enables static export
-  trailingSlash: true, // Optional: Adds trailing slashes to URLs
+  output: "export",
   images: {
-    domains: ["localhost"], // Add any local development image domains
+    domains: ["localhost"],
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "cdn.sanity.io", // Allow images from Sanity's CDN
+        hostname: "cdn.sanity.io",
         port: "",
       },
     ],
